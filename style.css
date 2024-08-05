@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255,255,255);
+
+}
+header h1{
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: xx-large;
+    text-align: center;
+    padding: 10px;
+}
+
+header h3{
+    background-color: rgb(195,234,228);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: small;
+}
+
+nav {
+    background-color: beige;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    
+}
+
+nav ul{ 
+   display: flex;
+   justify-content: space-around;
+   color: black;
+   list-style: none;
+
+}
+
+nav ul li a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;  /*removes underline*/
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color ease-in-out 0.5s;
+}
+
+nav ul li a:hover{
+    background-color: rgb(178,233,166);
+    color: black;
+    text-align: left;
+    padding: 10px;
+    
+}
+
+.item img{
+    width: 300px;
+    height: 500px;
+    margin: 0px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    width: 100%;
+    gap: 10px;
+    
+}
+
+.item-info button{
+
+border-color: beige;
+border-radius: 10%;
+text-align: center;
+padding: 10px;
+background-color: beige;
+color:black;
+font-family: Arial, Helvetica, sans-serif;
+font-size: large;
+
+}
+
+.item-info button:hover{
+    background-color: rgb(178,233,166);
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.item{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;    
+    border: 1px solid grey;
+    border-style: groove;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+    color: c;
+}
+
+.sale {
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+}
